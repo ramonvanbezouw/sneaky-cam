@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital@0;1&display=swap');
+
+h1 {
+    text-align:center;
+    margin-bottom: 0;
+}
+h1, h2, nav {
+    font-family: 'Roboto Slab', serif;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    padding:0;
+    list-style-type: none;
+    text-align:center;
+}
+figure {
+    margin:0;
+    margin-bottom:1.5rem;
+    position: relative;
+}
+figcaption {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+img {
+    max-width: 100%;
+    display: inline-block;
+    margin:0;
+}
+nav ul li {
+    display:inline-block;
+    font-size:1.2rem;
+    margin: 0 .5rem;
+}
+article {
+    margin-bottom:2rem;
+}
+main, #overview {
+    padding-top:1rem;
+    max-width:640px;
+    margin:auto;
+    padding-bottom:5rem;
+}
+#controls {
+    pointer-events: none;
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-gap:.5rem;
+    align-items: end;
+    position:fixed;
+    bottom:0.5rem;
+    left:0.5rem;
+    right:0.5rem;
+}
+button {
+    pointer-events: all;
+    background:#333;
+    color:#fff;
+    font-family: 'Roboto Slab', serif;
+    border:none;
+    padding:0.5rem;
+    border-radius:0.5rem;
+}
+#captures img {
+    margin-top:1rem;
+    margin-bottom:0.5rem;
+    display:block;
+}
+#captures button {
+    display:block;
+}
+video {
+    position:absolute;
+    opacity:0.75;
+    /* background:#ccc; */
+    top:0;
+    left:0;
+    max-width: 100%;
+    max-height:12rem;
+}
+.hidden {
+    display:none;
+}
+.buttons {
+    display:grid;
+    grid-auto-flow: column;
+    align-items:end;
+    float:right;
+    grid-gap:0.5rem;
+    place-content: start;
+}
+.secretButton {
+    color: #fff;
+    background:#333;
+    width:1rem;
+    height:1rem;
+    font-size:1.2rem;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    padding:0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.pictureButton {
+    background: #e44d26;
+}
+.flipButton {
+    background: #0775b4;
+}
+.toggleButton {
+    background:#56d0fc;
+}
